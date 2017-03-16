@@ -13,7 +13,7 @@ import java.util.Observable;
 public class Comunicacion extends Observable implements Runnable {
 	private final int puerto = 5000;
 	private DatagramSocket socket;
-	private final String ADDRESS = "224.2.2.2";
+	private final String ADDRESS = "223.2.2.2";
 	private InetAddress ips;
 	private String mensaje;
 

@@ -1,16 +1,13 @@
 import java.io.Serializable;
 
-import processing.core.PApplet;
-import processing.core.PImage;
-
-public class Categoria extends Producto implements Serializable {
+public class Categoria implements Serializable {
 	private String nombre;
 	private String descripcion;
-	private PImage imagen;
+	private String imagen;
 	
-	public Categoria(PApplet app) {
-		super(app);
-		// TODO Auto-generated constructor stub
+	public Categoria(String nombre, String descripion, String imagen) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.imagen = imagen;
 	}
-
 }  

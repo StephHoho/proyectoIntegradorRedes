@@ -9,6 +9,8 @@ public class Logica implements Observer {
 	private PApplet app;
 	private Comunicacion com;
 	private ArrayList<Producto> productos;
+	private ArrayList<Usuario> usuarios;
+	private ArrayList<Categoria> categoria;
 
 	public Logica(PApplet app) {
 		this.app = app;
@@ -16,16 +18,17 @@ public class Logica implements Observer {
 		com.addObserver(this);
 		Thread thread = new Thread(com);
 		thread.start();
-		productos= new ArrayList<Producto>();	
+		productos= new ArrayList<Producto>();
+		usuarios= new ArrayList<Usuario>();
+		categoria= new ArrayList<Categoria>();
 	}
 
 	public void pintar() {
-
+		
 	}
 
 	@Override
 	public void update(Observable arg0, Object arg1) {
-		// TODO Auto-generated method stub
 		
 	}
 

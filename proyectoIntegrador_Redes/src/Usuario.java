@@ -1,13 +1,14 @@
-import processing.core.PApplet;
 
-public class Usuario extends Logica {
+
+public class Usuario {
 	private String user; //usuario
 	private String mail; //correo
 	private String pass; //contraseña
 
-	public Usuario(PApplet app) {
-		super(app);
-		// TODO Auto-generated constructor stub
+	public Usuario(String user, String mail, String pass) {
+		this.user = user;
+		this.mail = mail;
+		this.pass = pass;
 	}
 
 }

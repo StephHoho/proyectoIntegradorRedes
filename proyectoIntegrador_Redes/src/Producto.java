@@ -1,14 +1,15 @@
 import java.io.Serializable;
 import processing.core.PApplet;
 
-public class Producto extends Logica implements Serializable {
+public class Producto implements Serializable {
 	private String nombreCate;
 	private String nombreProd;
-	private float nombreUnidad;
+	private float precioUnidad;
 	
-	public Producto(PApplet app) {
-		super(app);
-		// TODO Auto-generated constructor stub
+	public Producto(String nombreCate, String nombreProd, float precioUnidad) {
+		this.nombreCate = nombreCate;
+		this.nombreProd = nombreProd;
+		this.precioUnidad = precioUnidad;
 	}
 
 }
