@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pasteleria>
+	<usuarios>
+		<user id="1" name="go" correo="alitza.13@outlook.com" password="123">
+	</user>
+	</usuarios>
+	
+	<productos>
+		<producto nombreP="pUno" precio="$500">
+			<categoria>Pasteles</categoria>
+		</producto>
+		<producto nombreP="pDos" precio="$400">
+			<categoria>Pasteles</categoria>
+		</producto>
+		<producto nombreP="pTres" precio="$50">
+			<categoria>Caramelos</categoria>
+		</producto>
+		<producto nombreP="pCuatro" precio="$100">
+			<categoria>Caramelos</categoria>
+		</producto>
+	</productos>
+	<compras>
+		<compra user="go" id="01">
+			<productos cant="2" id="01">
+			</productos>
+		</compra>
+	</compras>
+</pasteleria>
